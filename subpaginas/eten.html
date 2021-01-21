@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+<title> DeOnlineSuperMarkt </title>
+<link rel= "stylesheet" type = text/css href= "../style.css">
+
+<script src= "kopen.js" async></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div id="winkelmand" border = 1>
+    <span> <h2> Winkelmand </h2> </span>
+    <img class="winkelkar "src= "winkelkar.png" alt= "winkelkar" width= 50 height = 50>
+    <p id= "product1"> </p>
+    <p id= "product2"> </p>
+    <p id= "product3"> </p>
+    <p id= "product4"> </p>
+    <p id= "product5"> </p>
+    <p id= "product6"> </p>
+    <p id= "product7"> </p>
+    <p id= "product8"> </p>
+    <p id= "product9"> </p>
+    <p id= "product10"> </p>
+    <p id= "product11"> </p>
+    <p id= "product12"> </p>
+    <p id= "product13"> </p>
+    <p id= "product14"> </p>
+    <p id= "product15"> </p>
+    <p id= "product16"> </p>
+    <p id= "product17"> </p>
+    <p id= "product18"> </p>
+    <p id= "product19"> </p>
+    <p id= "product20"> </p>
+    <p id= "product21"> </p>
+    <p id= "product22"> </p>
+    <p id= "product23"> </p>
+    <p id= "product24"> </p>
+    <p id= "product25"> </p>
+    <p id= "product26"> </p>
+    <p id= "product27"> </p>
+    <p id= "product28"> </p>
+    <p id= "product29"> </p>
+    <p id= "product30"> </p>
+    <p id= "product31"> </p>
+    <p id= "product32"> </p>
+
+
+    <div id= "total"> </div>
+   </div>
+
+  <div id="wrapper">
+  <div class="sidebar">
+    <table border = 1>
+      <tr>
+        <td> <a href="eten.html"> <h4> Eten </h4> </a>
+        </td>
+      </tr>
+      <tr>
+        <td> <a href="drinken.html"> <h4> Drinken </h4> </a>
+      </tr>
+    </table>
+  </div>
+
+<div class=header>
+<a class="logo"  href= "../index.html"> <img src= "logo.png" alt= "homepage" width = 400> </a>
+
+
+  <div id = artikelen>
+    <div style= 'margin-left: 465px;font-size: 40px;text-allign: center; color: white;font-weight: bold;'>
+  Eten
+  </div>
+<div id= item1>
+  <span> <h5> Frikandelbroodje</h5> </span>
+  <span> <strike> €99,99 </strike> €0,99 </span>
+  <img id = afbeelding src= eten/frikandelbroodje.png width= 175 height= 175>
+  <button onclick="addProductFrikandelbroodje()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item2>
+  <h5> Hamburger</h5>
+  <span> €0,80 </span>
+  <img id = afbeelding src= eten/hamburger.png width= 175 height= 175>
+  <button onclick="addProductHamburger()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item3>
+  <h5> 1 kg aardappelen </h5>
+  <span> €1,70 </span>
+  <img id = afbeelding src= eten/aardappel.png  width= 175 height= 175>
+  <button onclick="addProductAardappel()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item4>
+  <h5> Pindakaas </h5>
+  <span> €3,50 </span>
+  <img id = afbeelding src= eten/pindakaas.png width= 175 height= 175>
+  <button onclick="addProductPindakaas()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item5>
+  <h5> Croissant </h5>
+  <span> €0,30 </span>
+  <img id = afbeelding src= eten/croissant.png width= 175 height= 175>
+  <button onclick="addProductCroissant()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item6>
+  <h5> Stokbrood </h5>
+  <span> €1,50 </span>
+  <img  id = afbeelding src= eten/stokbrood.png width= 175 height= 175>
+  <button onclick="addProductStokbrood()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item7>
+  <h5> Broodje kroket </h5>
+  <span> €0,99 </span>
+  <img  id = afbeelding src= eten/broodje-kroket.png width= 175 height= 175>
+  <button onclick="addProductBroodjekroket()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+
+<div id= item8>
+  <h5> Pizza </h5>
+  <span> €7,50 </span>
+  <img  id = afbeelding src= eten/pizza.png width= 175 height= 175>
+  <button onclick="addProductPizza()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item9>
+  <h5> Pretzel </h5>
+  <span> €0,75 </span>
+  <img  id = afbeelding src= eten/pretzel.png width= 175 height= 175>
+  <button onclick="addProductPretzel()" id= "addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item10>
+  <h5> Zak friet 2,5kg </h5>
+  <span> €3,75 </span>
+  <img  id = afbeelding src= eten/friet2,5kg.png width= 175 height= 175>
+  <button onclick="addProductZakfriet()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item11>
+  <h5> Pannenkoekenmix </h5>
+  <span> €1,00 </span>
+  <img  id = afbeelding src= eten/pannenkoekenmix.png width= 175 height= 175>
+  <button onclick="addProductPannenkoekenmix()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item12>
+  <h5> 30 eieren </h5>
+  <span> €3,50 </span>
+  <img  id = afbeelding src= eten/30eieren.png width= 175 height= 175>
+  <button onclick="addProduct30eieren()" id="addButton" type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+</div>
+<footer>
+  <span> <a href="mailto:sam.vermulst@gmail.com"> Contact</a> </span>
+  <span> <a href= "../algemenevoorwaarden.html"> Algemene voorwaarden </a> </span>
+  <span> Dit is een website gemaakt voor een informatica project en je kan hier dus niet echt producten kopen </span>
+
+</footer>
+
+<script src = "../winkelkar.js"> </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</div>
+</body>
+
+
+</html>

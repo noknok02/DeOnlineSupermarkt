@@ -1,0 +1,142 @@
+
+
+.logo {
+  margin-left: 25px;
+}
+
+.sidebar {
+  margin-top: 100px;
+  width: 100px;
+  float: left;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.header{
+  float: left;
+  width: 900px;
+}
+
+.header .winkelkar {
+
+  margin-right: 50px;
+  width: 60px;
+  height: 60px;
+}
+
+#wrapper {
+  max-width: 1200px;
+  padding-right: 10px;
+  padding-left:  10px;
+}
+
+#item1 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 25px;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#item2 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 25px;
+  margin-left: 50px;
+  margin-right: 10px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#item3 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 25px;
+  margin-left: 50px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+#item4 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 25px;
+  margin-left: 150px;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+#item5 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 25px;
+  margin-left: 50px;
+  margin-top: 70px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+#item6 {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin: 25px;
+  margin-left: 50px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.addbuttons {
+  width: 150px;
+  height: 40px;
+}
+
+.addbuttons .buttontext {
+  font-size: 12px;
+}
+
+nav {
+  clear: both;
+  width: 1100px;
+}
+
+#tekst {
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 50px;
+}
+
+#winkelmand {
+  float: right;
+  width: 200px;
+  height: auto;
+  background-color: gray;
+  text-align: center;
+  margin-left: 1000px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: fixed;
+}
+#mainhtmlinfo {
+  position: absolute;
+  left: 150px;
+  top: 125px;
+}
+
+#winkelmandartikelen {
+  float: right;
+  width: 200px;
+  height: auto;
+  background-color: gray;
+  text-align: center;
+  margin-left: 1000px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: fixed;
+}

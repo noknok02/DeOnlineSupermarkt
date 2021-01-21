@@ -1,0 +1,428 @@
+
+<!DOCTYPE html>
+
+
+<html>
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> DeOnlineSuperMarkt </title>
+<link rel= "stylesheet" type = text/css href= "style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+
+  <!--- Winkelmand -->
+
+
+  <div id="winkelmand" border = 1>
+    <h2> Winkelmand </h2>
+    <img class="winkelkar "src= "subpaginas/winkelkar.png" alt= "winkelkar" width= 50 height = 50>
+    <br>
+    <span style= "font-size: 25px;font-weight: bold;float: left;"> Eten </span>
+    <br>
+    <br>
+    <p id= "product1"> </p>
+    <p id= "product2"> </p>
+    <p id= "product3"> </p>
+    <p id= "product4"> </p>
+    <p id= "product5"> </p>
+    <p id= "product6"> </p>
+    <p id= "product7"> </p>
+    <p id= "product8"> </p>
+    <p id= "product9"> </p>
+    <p id= "product10"> </p>
+    <p id= "product11"> </p>
+    <p id= "product12"> </p>
+    <br>
+    <span style = "font-size: 25px;font-weight: bold;float: left;"> Drinken </span>
+    <br>
+    <br>
+    <p id= "product13"> </p>
+    <p id= "product14"> </p>
+    <p id= "product15"> </p>
+    <p id= "product16"> </p>
+    <p id= "product17"> </p>
+    <p id= "product18"> </p>
+    <p id= "product19"> </p>
+    <p id= "product20"> </p>
+    <p id= "product21"> </p>
+    <p id= "product22"> </p>
+    <p id= "product23"> </p>
+    <p id= "product24"> </p>
+    <p id= "product25"> </p>
+    <p id= "product26"> </p>
+    <p id= "product27"> </p>
+    <p id= "product28"> </p>
+    <p id= "product29"> </p>
+    <p id= "product30"> </p>
+    <p id= "product31"> </p>
+    <p id= "product32"> </p>
+
+
+    <div id= "total"> </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+<!--- logo -->
+
+
+<div class=header>
+<a class="logo"  href= "index.html"> <img style="width:800px;"src= "subpaginas/logo.png" alt= "homepage"> </a>
+</div>
+
+
+
+
+
+
+<!--- navigation -->
+
+
+  <div id = "artikelen" border = 1>
+<button type="button" name="answer" onclick="showDiv()" id = addButtonbestverkocht style="margin-top: 5px;"> <h2 style = color:white;border:2px solid white;>  Best verkocht  </h2> </button>
+<button type="button" name="answer" onclick = 'showDiv2()' id= addButton type="button" style="margin-top: 5px;"> <h2 style = color:white;border:2px solid white;>  Eten  </h2> </button>
+<button type="button" name="answer" onclick = 'showDiv3()' id= addButton type="button" style="margin-top: 5px;"> <h2 style = color:white;border:2px solid white;>  Drinken </h2> </button>
+
+
+
+<!--- slides -->
+
+<div id="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="subpaginas/colaflesjekorting.png" style="width:200px;height:400px;opacity:0.5;width:25%;height:25%;">
+    <img src="subpaginas/frikendelkorting.png" style="width:400px;height:250px;width:50%;height:50%;">
+    <img src="subpaginas/pizzakorting.png" style="width:300px;height:300px;opacity:0.5;width:25%;height:25%;">
+    <div class="text"> Deze aanbiedingen zijn tijdelijk mis ze niet! </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="subpaginas/pizzakorting.png" style="width:300px;height:300px;opacity:0.5;width:25%;height:25%;">
+    <img src="subpaginas/colaflesjekorting.png" style="width:200px;height:400px;width:50%;height:50%;">
+    <img src="subpaginas/frikendelkorting.png" style="width:400px;height:250px;opacity:0.5;width:25%;height:25%;">
+<div class="text"> 50% korting! </div>
+
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="subpaginas/frikendelkorting.png" style="width:400px;height:250px;opacity:0.5;width:25%;height:25%;">
+    <img src="subpaginas/pizzakorting.png" style="width:300px;height:300px;width:50%;height:50%;">
+    <img src="subpaginas/colaflesjekorting.png" style="width:200px;height:400px;opacity:0.5;width:25%;height:25%;">
+    <div class="text"><div class="text">50% korting op deze overheerlijke pizza! </div></div>
+  </div>
+<br>
+</div>
+
+
+
+<!--- Best verkocht -->
+
+
+<div id = BestVerkocht style="display:none;" class="answer_list" >
+<div style= 'font-size: 40px;text-allign: center; color: white;font-weight: bold; width: 1200px; height: 100px; background-color:#4CAF50 ;'>
+<h1 style = "margin-left: 400px;margin-top: 20px; padding-top:25px;">Best verkocht</h1>
+</div>
+
+<div id= item1>
+  <span> <h5> Frikandelbroodje</h5> </span>
+  <span> €0,99 </span>
+  <img id= afbeelding src= subpaginas/eten/frikandelbroodje.png width= 175 height= 175>
+  <button onclick="addProductFrikandelbroodje()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item2>
+  <h5> Hamburger</h5>
+  <span> €0,80 </span>
+  <img id= afbeelding src= subpaginas/eten/hamburger.png width= 175 height= 175>
+  <button onclick="addProductHamburger()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item3>
+  <h5> Cola flesje </h5>
+  <span> €0,50 </span>
+  <img id = afbeelding src= subpaginas/eten/colaflesje.png width= 175 height= 175>
+  <button onclick="addProductColaflesje()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item4>
+  <h5> Pindakaas </h5>
+  <span> €3,50 </span>
+  <img id = afbeelding src= subpaginas/eten/pindakaas.png width= 175 height= 175>
+  <button onclick="addProductPindakaas()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item5>
+  <h5> Croissant </h5>
+  <span> €0,30 </span>
+  <img id = afbeelding src= subpaginas/eten/croissant.png width= 175 height= 175>
+  <button onclick="addProductCroissant()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item6>
+  <h5> Stokbrood </h5>
+  <span> €1,50 </span>
+  <img  id = afbeelding src= subpaginas/eten/stokbrood.png width= 175 height= 175>
+  <button onclick="addProductStokbrood()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--- Eten -->
+
+
+<div id = 'Eten' style="display:none;" class="answer_list" >
+<div style= 'font-size: 40px;text-allign: center; color: white;font-weight: bold; width: 1200px; height: 100px; background-color:#4CAF50'>
+<h1 style = "margin-left: 490px;margin-top: 20px;padding-top:25px"> Eten </h1>
+</div>
+<div id= item1>
+<h5> Pindakaas </h5>
+<span> €3,50 </span>
+<img id = afbeelding src= subpaginas/eten/pindakaas.png width= 175 height= 175>
+<button onclick="addProductPindakaas()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item2>
+<h5> Broodje kroket </h5>
+<span> €0,99 </span>
+<img  id = afbeelding src= subpaginas/eten/broodje-kroket.png width= 175 height= 175>
+<button onclick="addProductBroodjekroket()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item3>
+<h5> 1 kg aardappelen </h5>
+<span> €1,70 </span>
+<img id = afbeelding src= subpaginas/eten/aardappel.png  width= 175 height= 175>
+<button onclick="addProductAardappel()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+
+<div id= item4>
+<span> <h5> Frikandelbroodje</h5> </span>
+<span> <strike> €0,99 </strike> €0,50 </span>
+<img id = afbeelding src= subpaginas/eten/frikandelbroodje.png width= 175 height= 175>
+<button onclick="addProductFrikandelbroodje()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item5>
+<h5> Croissant </h5>
+<span> €0,30 </span>
+<img id = afbeelding src= subpaginas/eten/croissant.png width= 175 height= 175>
+<button onclick="addProductCroissant()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item6>
+<h5> Stokbrood </h5>
+<span> €1,50 </span>
+<img  id = afbeelding src= subpaginas/eten/stokbrood.png width= 175 height= 175>
+<button onclick="addProductStokbrood()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+
+<div id= item7>
+<h5> Hamburger</h5>
+<span> €0,80 </span>
+<img id = afbeelding src= subpaginas/eten/hamburger.png width= 175 height= 175>
+<button onclick="addProductHamburger()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item8>
+<h5> Pizza </h5>
+<span> <strike>€7,50</strike> €3,75</span>
+<img  id = afbeelding src= subpaginas/eten/pizza.png width= 175 height= 175>
+<button onclick="addProductPizza()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item9>
+<h5> Pretzel </h5>
+<span> €0,75 </span>
+<img  id = afbeelding src= subpaginas/eten/pretzel.png width= 175 height= 175>
+<button onclick="addProductPretzel()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item10>
+<h5> Zak friet 2,5kg </h5>
+<span> €3,75 </span>
+<img  id = afbeelding src= subpaginas/eten/friet2,5kg.png width= 175 height= 175>
+<button onclick="addProductZakfriet()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item11>
+<h5> Pannenkoekenmix </h5>
+<span> €1,00 </span>
+<img  id = afbeelding src= subpaginas/eten/pannenkoekenmix.png width= 175 height= 175>
+<button onclick="addProductPannenkoekenmix()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item12>
+<h5> 30 eieren </h5>
+<span> €3,50 </span>
+<img  id = afbeelding src= subpaginas/eten/30eieren.png width= 175 height= 175>
+<button onclick="addProduct30eieren()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!--- Drinken -->
+
+
+<div id = 'Drinken' style="display:none;" class="answer_list" >
+  <div style= 'font-size: 40px;text-allign: center; color: white;font-weight: bold; width: 1200px; height: 100px; background-color: #4CAF50 '>
+  <h1 style = "margin-left: 470px;margin-top: 20px; padding-top:25px;"> Drinken </h1>
+</div>
+<div id= item1>
+<span> <h5> Spa blauw(1L)</h5> </span>
+<span> €0,99 </span>
+<img id = afbeelding src=  subpaginas/eten/water.png width= 175 height= 175>
+<button onclick="addProductWater()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item2>
+<h5> Fristi(6x20cl)</h5>
+<span> €1,50 </span>
+<img id = afbeelding src=  subpaginas/eten/fristi.png width= 175 height= 175>
+<button onclick="addProductFristi()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item3>
+<h5> Cola flesje(33cl) </h5>
+<span> €1,20 </span>
+<img id = afbeelding src=  subpaginas/eten/colaflesje.png width= 175 height= 175>
+<button onclick="addProductColaflesje()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item4>
+<h5> Fanta(33cl) </h5>
+<span> €1,20 </span>
+<img id = afbeelding src=  subpaginas/eten/fanta.png width= 175 height= 175>
+<button onclick="addProductFanta()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item5>
+<h5> Chocomel(1L) </h5>
+<span> €1,60 </span>
+<img id = afbeelding src=  subpaginas/eten/chocomel.png width= 175 height= 175>
+<button onclick="addProductChocomel()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item6>
+<h5> Melk </h5>
+<span> €1,50 </span>
+<img  id = afbeelding src=  subpaginas/eten/melk.png width= 175 height= 175>
+<button onclick="addProductMelk()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item7>
+<h5> Spa rood (1L) </h5>
+<span> €0,89 </span>
+<img  id = afbeelding src=  subpaginas/eten/Sparood.png width= 175 height= 175>
+<button onclick="addProductSparood()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item8>
+<h5> Ice tea (1L) </h5>
+<span> €1,99 </span>
+<img  id = afbeelding src=  subpaginas/eten/Icetea.png width= 175 height= 175>
+<button onclick="addProductIcetea()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item9>
+<h5> Ranja (1L) </h5>
+<span> €2,99 </span>
+<img  id = afbeelding src=  subpaginas/eten/ranja.png width= 175 height= 175>
+<button onclick="addProductRanja()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item10>
+<h5> Cola zero (6x33cl) </h5>
+<span> €3,99 </span>
+<img  id = afbeelding src=  subpaginas/eten/colazero.png width= 175 height= 175>
+<button onclick="addProductColazero()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item11>
+<h5> Radler (33cl) </h5>
+<span> €0,99 </span>
+<img  id = afbeelding src=  subpaginas/eten/radler.png width= 175 height= 175>
+<button onclick="addProductRadler()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+
+<div id= item12>
+<h5> Jus d´orange (1L) </h5>
+<span> €1,30 </span>
+<img  id = afbeelding src=  subpaginas/eten/jus.png width= 175 height= 175>
+<button onclick="addProductJus()" class= button type="button"> <p class="buttontext"> Toevoegen aan winkelmand </p> </button>
+</div>
+</div>
+
+
+
+<!--- einde artikelen div -->
+</div>
+</div>
+
+<!--- footer -->
+
+<footer>
+  <p> <a href="mailto:sam.vermulst@gmail.com"> Contact</a> </p>
+  <p> <a href= "algemenevoorwaarden.html"> Algemene voorwaarden </a> </p>
+  <p> Dit is een website gemaakt voor een informatica project en je kan hier dus niet echt producten kopen </p>
+  <p> Telefoonnummer: +31 6 48484156 </p>
+</footer>
+
+
+
+
+
+<!--- 2 script files -->
+</script>
+<script src = "winkelkar.js"> </script>
+<script src = "showDivs.js"> </script>
+
+<!--- jquery en bootstrap -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+
+
+</body>
+
+
+</html>
