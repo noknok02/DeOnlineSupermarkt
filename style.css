@@ -24,12 +24,11 @@ h5 {
 }
 
 #algemenevoorwaardendiv {
-    float: left;
+    float: center;
     width: auto;
     margin-left: 200px;
     padding: 15px;
     background-color: #1B50;
-text-align: center;
     height: auto;
 }
 
