@@ -76,7 +76,7 @@ a:hover {
 
 .header{
   float: left;
-  width: 1125px;
+  width: auto;
 }
 
 #addButton {
